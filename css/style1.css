@@ -1,0 +1,55 @@
+body{
+    background-color:#EDC7B7;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+i.fa{
+    font-size:20px;
+    padding:3%;
+    margin:2%;
+}
+.navbar{
+    padding:6px;
+}
+.navbar-brand{
+    padding:0;
+}
+h2{
+    font-size:2.5rem;
+    text-align:center;
+    margin-top:20px;
+    text-shadow: 2px 2px 5px #ECECEC;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5rem; 
+}
+.footer-style{
+    background-color:#123C69;
+    color:white;
+    width:100%;
+    height:auto;
+    margin-top: 20px;
+    }
+    .contact-list a{
+        text-decoration:none;
+        color:white;
+    }
+    .contact-list a:hover{
+        text-decoration:none;
+        color:#EDC7B7;
+        
+    }
+#briefmsg{
+    font-style: italic;
+    line-height: 0.8em;
+    font-size: 0.8em;
+}
+h4{
+    text-align: center;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}

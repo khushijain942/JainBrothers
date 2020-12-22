@@ -1,0 +1,181 @@
+body{
+    background-color:#EDC7B7;
+}
+h2{
+    font-size:2.5rem;
+    text-align:center;
+    margin-top:20px;
+    text-shadow: 2px 2px 5px #ECECEC;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5rem; 
+}
+.flex-container{
+    /*display:-webkit-flex;
+		display:-moz-flex;
+		display:-ms-flex;
+	display:-o-flex;*/
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    /*align-items: center;
+	justify-content:center;*/
+}
+.print-img{
+	flex: 19%;
+	background-size:cover;
+	margin:auto;
+	margin-bottom: 8px;
+	padding-top:19%;
+	max-width: 19%;
+	position:relative;
+	/*
+		height:400px;
+		display:flex;
+		flex-direction:column;
+		max-width: 600px;
+		max-height: 400px;
+	margin-bottom: 50px;*/
+}
+.pp{
+	padding-left: 2px;
+	padding-right: 2px;
+	position: absolute;
+	bottom: 0;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	width: 100%;
+	line-height: 12px;
+	color: white;
+	background-color: rgb(0, 0, 26, 0.5);
+	opacity: 0.8;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.pp>a{
+	visibility: hidden;
+	font-size: 0.5em;
+}
+.Flowers-Leaves{
+    background-image:url("../images/fs_bg.jpg");
+    background-repeat: repeat;
+    margin-bottom: 50px;
+    margin-top:50px;
+    background-size: cover;
+	position:relative;
+	text-align:center;
+}
+#fs_right{
+	position:absolute;
+	right:0;
+}
+#fs_left{
+	position:absolute;
+	left:0;
+}
+.Black-White{
+	background-image:url("../images/bw_bg.jpg");
+    background-repeat: repeat;
+    margin-bottom: 50px;
+    margin-top:50px;
+    background-size: cover;
+	position:relative;
+	text-align:center;
+}
+.footer-style{
+    background-color:#123C69;
+    color:white;
+    width:100%;
+    height:auto;
+    margin-top: 20px;
+}
+.contact-list a{
+	text-decoration:none;
+	color:white;
+}
+.contact-list a:hover{
+	text-decoration:none;
+	color:#EDC7B7;
+	
+}
+.print-img:hover{
+	position:relative;
+	padding-top:23%;
+	max-width: 23%;
+	margin:auto;
+	box-shadow:10px 10px 50px black;
+	text-align: center;
+}
+.print-img:hover .pp{
+	opacity: 1;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+	bottom: 20%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: unset;
+}
+.print-img:hover .pp>a{
+	visibility: visible;
+	font-size: 2em;
+}
+.pp>a:hover{
+	color: orangered;
+}
+@media only screen and (max-width: 740px) {
+	#fs_right{
+		display: none;
+	}
+	#fs_left{
+		display: none;
+	}
+	#bg_centre{
+		content:url("../images/bw_centre.jpg");
+	}
+	.pp{
+		display: none;
+	}
+	.print-img:hover .pp{
+		display: block;
+		opacity: 1;
+		font-size: 1em;
+		letter-spacing: unset;
+		bottom: 10%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		line-height: 12px;
+	}
+	.print-img:hover .pp>a{
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.Black-White{
+		display: none;
+	}
+	.Flowers-Leaves{
+		display: none;
+	}
+	h3{
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: tomato;
+		color: tomato;
+		background-color: black;
+		border-style: double;
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 6px;
+	}
+	.print-img:hover .pp{
+		opacity: 1;
+		font-size: 1em;
+		letter-spacing: unset;
+		bottom: 2%;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		line-height: 12px;
+	}
+}
+
